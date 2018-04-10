@@ -17,10 +17,22 @@ public class DiscussionFirebase: DiscussionManager {
     public func list(onSuccess: @escaping ([Discussion]) -> Void, onError: ErrorClosure?) {
         
         self.ref.observe(.value, with: { (snapshot) in
+
+            // ESTO LO COMENTAMOS Y LO HACEMOS CON UN FOREACH
+//            let discussions = snapshot.children
+//                .flatMap({ Discussion.mapper(snapshot: $0 as! DataSnapshot) })
+//                .sorted(by: { $0.uid > $1.uid })
             
-            let discussions = snapshot.children
-                .flatMap({ Discussion.mapper(snapshot: $0 as! DataSnapshot) })
-                .sorted(by: { $0.uid > $1.uid })
+            var discussions = [Discussion]()
+            
+            for child in snapshot.children {
+                let discussion = Discussion.mapper(snapshot: child as! DataSnapshot)
+                discussions.append(discussion!)
+            }
+            
+            discussions = discussions.sorted(by: { (discussion1, discussion2) -> Bool in
+                return discussion1.uid < discussion2.uid
+            })
             
             onSuccess(discussions)
             

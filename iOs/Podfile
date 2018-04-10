@@ -11,5 +11,7 @@ target 'ChatKeepcoding' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'FirebaseUI/Database'
+  pod 'Firebase/Storage'
+  pod 'Kingfisher','~> 4.0'
 
 end
