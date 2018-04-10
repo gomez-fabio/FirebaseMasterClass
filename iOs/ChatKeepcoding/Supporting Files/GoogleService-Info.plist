@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>959017429085-ci1nk3e47sahg7dkgapovf87nbj2m4vv.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.959017429085-ci1nk3e47sahg7dkgapovf87nbj2m4vv</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBI-s2WQ5J3-YHIWaUXsqSclIurZiFQGBA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>959017429085</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>io.keepcoding.ChatKeepcoding</string>
+	<key>PROJECT_ID</key>
+	<string>fabiochatfirebase</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fabiochatfirebase.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:959017429085:ios:5fa73e932d6b197e</string>
+	<key>DATABASE_URL</key>
+	<string>https://fabiochatfirebase.firebaseio.com</string>
+</dict>
+</plist>
