@@ -10,7 +10,18 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
  response.send("Hello Fistros Pecadores!");
 });
 
-exports.newMessage = functions.database.ref('/messages/{discussionId}/{messageId}').onWrite((event) =>{
-    // var message = event.data.val();
-    console.log(event);
-})
+exports.newMessage = functions.database.ref('/messages/{discussionId}/{messageId}').onWrite((event, context) =>{
+    const discussionId = context.params.discussionId;
+    const messageId = context.params.messageId;
+
+    const message = event.after.val();
+
+    if (!message) {
+        return;
+    }
+
+    console.log(message);
+    
+    return true;
+
+});
